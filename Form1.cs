@@ -17,7 +17,7 @@ namespace decision
         {
             InitializeComponent();
         }
-
+        Boolean IsMatch = true;
         Boolean inputCheck(string s)
         {
             if (!((new Regex(@"^100$|^[0-9]{1,2}[.][0-9]+$|^[0-9]{1,2}$")).IsMatch(s)))
@@ -30,34 +30,35 @@ namespace decision
 
         private void btn1_Click(object sender, EventArgs e)
         {
+            if (IsMatch == false)
+            {
+                lb1.Text = "wrong number\n";
+                return;
+            }
+
             if (Convert.ToDouble(tbox.Text) >= 90 && Convert.ToDouble(tbox.Text) <= 100)
                 {
                     lb1.Text = "A級";
-                    lb2.Text = "A級";
                     tbox.BackColor = Color.Gold;
                 }
                 else if (Convert.ToDouble(tbox.Text) >= 80 && Convert.ToDouble(tbox.Text) < 90)
                 {
                     lb1.Text = "B級";
-                    lb2.Text = "B級";
                     tbox.BackColor = Color.Silver;
                 }
                 else if (Convert.ToDouble(tbox.Text) >= 70 && Convert.ToDouble(tbox.Text) < 80)
                 {
                     lb1.Text = "C級";
-                    lb2.Text = "C級";
                     tbox.BackColor = Color.Blue;
             }
                 else if (Convert.ToDouble(tbox.Text) >= 60 && Convert.ToDouble(tbox.Text) < 70)
                 {
                     lb1.Text = "D級";
-                    lb2.Text = "D級";
                     tbox.BackColor = Color.Green;
             }
                 else if ( Convert.ToDouble(tbox.Text) < 60)
                 {
                     lb1.Text = "E級";
-                    lb2.Text = "E級";
                     tbox.BackColor = Color.Pink;
             }
 
@@ -65,31 +66,32 @@ namespace decision
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            switch(Convert.ToInt32(tbox.Text)/10)
+            if (IsMatch == false)
+            {
+                lb2.Text = "wrong number\n";
+                return;
+            }
+
+            switch (Convert.ToInt32(tbox.Text)/10)
             {
                 case 10:
                 case  9:
-                        lb1.Text = "A級";
                         lb2.Text = "A級";
                         tbox.BackColor = Color.Gold;
                     break;
                 case 8:
-                        lb1.Text = "B級";
                         lb2.Text = "B級";
                         tbox.BackColor = Color.Silver;
                     break;
                 case 7:
-                        lb1.Text = "C級";
                         lb2.Text = "C級";
                         tbox.BackColor = Color.Blue;
                     break;
                 case 6:
-                        lb1.Text = "D級";
                         lb2.Text = "D級";
                         tbox.BackColor = Color.Green;
                     break;
                 case 5:
-                        lb1.Text = "E級";
                         lb2.Text = "E級";
                         tbox.BackColor = Color.Pink;
                     break;
@@ -109,12 +111,12 @@ namespace decision
         {
 
         }
-
+        
         private void tbox_TextChanged(object sender, EventArgs e)
         {
             tbox.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             tbox.ForeColor = System.Drawing.Color.Black;
-            if (inputCheck(tbox.Text) == false)
+            if ((IsMatch = inputCheck(tbox.Text)) == false)
             {
                 tbox.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
                 tbox.ForeColor = System.Drawing.Color.Red;

@@ -42,3 +42,13 @@ D:\cheng liang\c_洪福成老師\作業\作業1\1.1.0decision練習\obj\Debug\de
 D:\cheng liang\c_洪福成老師\作業\作業1\1.1.0decision練習\obj\Debug\decision.csproj.CoreCompileInputs.cache
 D:\cheng liang\c_洪福成老師\作業\作業1\1.1.0decision練習\obj\Debug\decision.exe
 D:\cheng liang\c_洪福成老師\作業\作業1\1.1.0decision練習\obj\Debug\decision.pdb
+D:\git_repository\113-ERP-01_05_HW1-1_checkTB_by_regular_exp\bin\Debug\decision.exe.config
+D:\git_repository\113-ERP-01_05_HW1-1_checkTB_by_regular_exp\bin\Debug\decision.exe
+D:\git_repository\113-ERP-01_05_HW1-1_checkTB_by_regular_exp\bin\Debug\decision.pdb
+D:\git_repository\113-ERP-01_05_HW1-1_checkTB_by_regular_exp\obj\Debug\decision.csproj.AssemblyReference.cache
+D:\git_repository\113-ERP-01_05_HW1-1_checkTB_by_regular_exp\obj\Debug\decision.Form1.resources
+D:\git_repository\113-ERP-01_05_HW1-1_checkTB_by_regular_exp\obj\Debug\decision.Properties.Resources.resources
+D:\git_repository\113-ERP-01_05_HW1-1_checkTB_by_regular_exp\obj\Debug\decision.csproj.GenerateResource.cache
+D:\git_repository\113-ERP-01_05_HW1-1_checkTB_by_regular_exp\obj\Debug\decision.csproj.CoreCompileInputs.cache
+D:\git_repository\113-ERP-01_05_HW1-1_checkTB_by_regular_exp\obj\Debug\decision.exe
+D:\git_repository\113-ERP-01_05_HW1-1_checkTB_by_regular_exp\obj\Debug\decision.pdb
